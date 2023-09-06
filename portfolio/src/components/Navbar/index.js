@@ -1,6 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link as LinkR } from 'react-router-dom';
+//importting logo from react https://react-icons.github.io/react-icons/icons?name=di
+import { DiCssdeck } from'react-icons/di';
+//import { Gi3DGlasses } from "react-icons/gi";
+
 
 
 const Nav = styled.div`
@@ -120,28 +124,36 @@ background-color: transparent;
     }
 `;
 
-
+const Span = styled.div`
+    padding: 0 4px;
+    font-weight: bold;
+    font-size: 18px;
+`;
 
 
 const Navbar = () => {
-    return (
-        <Nav>
-            <NavContainer>
-                <NavLogo>Logo</NavLogo>
-                <MobileIcon>Icon</MobileIcon>
-                <NavItems>
-                    <NavLink href="#about">About</NavLink>
-                    <NavLink href='#skills'>Skills</NavLink>
-                    <NavLink href='#experience'>Experience</NavLink>
-                    <NavLink href='#projects'>Projects</NavLink>
-                    <NavLink href='#education'>Education</NavLink>
-                </NavItems>
-                <ButtonContainer>
-                    <GitHubButton>GitHub Profile</GitHubButton>
-                </ButtonContainer>
-            </NavContainer>
-        </Nav >
-    )
+  return (
+    <Nav>
+      <NavContainer>
+        <NavLogo to='/'>
+          <a style={{ display: "flex", alignItems: "center", color: "white", marginBottom: '20;', cursor: 'pointer' }}>
+            <DiCssdeck size="3rem" /> <Span>Portfolio</Span>
+          </a>
+        </NavLogo>
+        <MobileIcon>Icon</MobileIcon>
+        <NavItems>
+          <NavLink href="#about">About</NavLink>
+          <NavLink href='#skills'>Skills</NavLink>
+          <NavLink href='#experience'>Experience</NavLink>
+          <NavLink href='#projects'>Projects</NavLink>
+          <NavLink href='#education'>Education</NavLink>
+        </NavItems>
+        <ButtonContainer>
+          <GitHubButton>GitHub Profile</GitHubButton>
+        </ButtonContainer>
+      </NavContainer>
+    </Nav >
+  )
 }
 
 export default Navbar;
