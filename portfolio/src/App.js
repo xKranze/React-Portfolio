@@ -1,7 +1,11 @@
 import './App.css';
 import styled, { ThemeProvider } from 'styled-components'
 import { darkTheme } from './utils/Themes.js';
-import Skills from './components/Skills';
+import Navbar from "./components/Navbar";
+import './App.css';
+import HeroSection from "./components/HeroSection";
+import Skills from "./components/Skills";
+import Education from "./components/Education";
 
 
 const Body = styled.div`
@@ -25,24 +29,16 @@ const Wrapper = styled.div`
 
 function App() {
   return (
-    <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
-    <Router >
+    <ThemeProvider theme={darkTheme}>
+
       <Navbar />
       <Body>
         <HeroSection />
         <Wrapper>
           <Skills />
-          <Experience />
-        </Wrapper>
-      
-        <Wrapper>
           <Education />
-          <Contact />
         </Wrapper>
-        <Footer />
-        
       </Body>
-    </Router>
   </ThemeProvider>
 );
 }
