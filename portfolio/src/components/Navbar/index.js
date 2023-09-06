@@ -1,9 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useTheme } from 'styled-components';
 import { Link as LinkR } from 'react-router-dom';
 //importting logo from react https://react-icons.github.io/react-icons/icons?name=di
-import { DiCssdeck } from'react-icons/di';
+import { DiCssdeck } from 'react-icons/di';
 //import { Gi3DGlasses } from "react-icons/gi";
+import { FaBars } from 'react-icons/fa';
 
 
 
@@ -130,8 +132,47 @@ const Span = styled.div`
     font-size: 18px;
 `;
 
+const MobileMenu = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    padding: 12px 40px 24px 40px;
+    background: ${({ theme }) => theme.card_light + 99};
+    transition: all 0.6s ease-in-out;
+    transform: ${({ isOpen }) => (isOpen ? 'translateY(0)' : 'translateY(-100%)')};
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
+    z-index: ${({ isOpen }) => (isOpen ? '1000' : '-1000')};
+
+`
+
+const MobileMenuLinks = styled(LinkR)`
+  color: ${({ theme }) => theme.text_primary};
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  :hover {
+    color: ${({ theme }) => theme.primary};
+  }
+
+  &.active {
+    border-bottom: 2px solid ${({ theme }) => theme.primary};
+  }
+`;
+
+
 
 const Navbar = () => {
+  //Hook that lets you add a state variable to your component.
+  const [isOpen, setIsOpen] = React.useState(false);
+  const theme = useTheme();
   return (
     <Nav>
       <NavContainer>
@@ -140,7 +181,11 @@ const Navbar = () => {
             <DiCssdeck size="3rem" /> <Span>Portfolio</Span>
           </a>
         </NavLogo>
-        <MobileIcon>Icon</MobileIcon>
+        <MobileIcon>
+          <FaBars onClick={() => {
+            setIsOpen(!isOpen)
+          }} />
+        </MobileIcon>
         <NavItems>
           <NavLink href="#about">About</NavLink>
           <NavLink href='#skills'>Skills</NavLink>
@@ -152,6 +197,32 @@ const Navbar = () => {
           <GitHubButton>GitHub Profile</GitHubButton>
         </ButtonContainer>
       </NavContainer>
+      {isOpen && 
+        <MobileMenu isOpen={isOpen}>
+          <MobileMenuLinks href="#about" onClick={() => {
+            setIsOpen(!isOpen)
+          }}>About</MobileMenuLinks>
+          <MobileMenuLinks href='#skills' onClick={() => {
+            setIsOpen(!isOpen)
+          }}>Skills</MobileMenuLinks>
+          <MobileMenuLinks href='#experience' onClick={() => {
+            setIsOpen(!isOpen)
+          }}>Experience</MobileMenuLinks>
+          <MobileMenuLinks href='#projects' onClick={() => {
+            setIsOpen(!isOpen)
+          }}>Projects</MobileMenuLinks>
+          <MobileMenuLinks href='#education' onClick={() => {
+            setIsOpen(!isOpen)
+          }}>Education</MobileMenuLinks>
+          <GitHubButton style={{ 
+            padding: '10px 16px', 
+            background: `${theme.primary}`, 
+            color: 'white', 
+            width: 'max-content' }} 
+            href={'/'} 
+            target="_blank">Github Profile</GitHubButton>
+        </MobileMenu>
+      }
     </Nav >
   )
 }
