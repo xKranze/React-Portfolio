@@ -6,6 +6,7 @@ import './App.css';
 import HeroSection from "./components/HeroSection";
 import Skills from "./components/Skills";
 import Education from "./components/Education";
+import { BrowserRouter as Router } from 'react-router-dom';
 
 
 const Body = styled.div`
@@ -30,17 +31,18 @@ const Wrapper = styled.div`
 function App() {
   return (
     <ThemeProvider theme={darkTheme}>
-
-      <Navbar />
-      <Body>
-        <HeroSection />
-        <Wrapper>
-          <Skills />
-          <Education />
-        </Wrapper>
-      </Body>
-  </ThemeProvider>
-);
+      <Router>
+        <Navbar />
+        <Body>
+          <HeroSection />
+          <Wrapper>
+            <Skills />
+            <Education />
+          </Wrapper>
+        </Body>
+      </Router>
+    </ThemeProvider>
+  );
 }
 
 export default App;
