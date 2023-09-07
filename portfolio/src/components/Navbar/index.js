@@ -102,8 +102,7 @@ const ButtonContainer = styled.div`
   }
 `;
 
-const GitHubButton = styled.button`
-background-color: transparent;
+const GitHubButton = styled.a`
   border: 1.8px solid ${({ theme }) => theme.primary};
   justify-content: center;
   display: flex;
@@ -115,7 +114,7 @@ background-color: transparent;
   padding: 0 20px;
   font-weight: 500;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 16px;
   transition: all 0.6s ease-in-out;
     :hover {
       background: ${({ theme }) => theme.primary};
@@ -174,7 +173,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   const theme = useTheme();
   return (
-    <Nav>
+  <Nav>
       <NavContainer>
         <NavLogo to='/'>
           <a style={{ display: "flex", alignItems: "center", color: "white", marginBottom: '20;', cursor: 'pointer' }}>
@@ -194,37 +193,33 @@ const Navbar = () => {
           <NavLink href='#education'>Education</NavLink>
         </NavItems>
         <ButtonContainer>
-          <GitHubButton>GitHub Profile</GitHubButton>
+          <GitHubButton>Github Profile</GitHubButton>
         </ButtonContainer>
-      </NavContainer>
-      {isOpen && 
-        <MobileMenu isOpen={isOpen}>
-          <MobileMenuLinks href="#about" onClick={() => {
-            setIsOpen(!isOpen)
-          }}>About</MobileMenuLinks>
-          <MobileMenuLinks href='#skills' onClick={() => {
-            setIsOpen(!isOpen)
-          }}>Skills</MobileMenuLinks>
-          <MobileMenuLinks href='#experience' onClick={() => {
-            setIsOpen(!isOpen)
-          }}>Experience</MobileMenuLinks>
-          <MobileMenuLinks href='#projects' onClick={() => {
-            setIsOpen(!isOpen)
-          }}>Projects</MobileMenuLinks>
-          <MobileMenuLinks href='#education' onClick={() => {
-            setIsOpen(!isOpen)
-          }}>Education</MobileMenuLinks>
-          <GitHubButton style={{ 
-            padding: '10px 16px', 
-            background: `${theme.primary}`, 
-            color: 'white', 
-            width: 'max-content' }} 
-            href={'/'} 
+        {
+          isOpen &&
+          <MobileMenu isOpen={isOpen}>
+            <MobileMenuLinks href="#about" onClick={() => {
+              setIsOpen(!isOpen)
+            }}>About</MobileMenuLinks>
+            <MobileMenuLinks href='#skills' onClick={() => {
+              setIsOpen(!isOpen)
+            }}>Skills</MobileMenuLinks>
+            <MobileMenuLinks href='#experience' onClick={() => {
+              setIsOpen(!isOpen)
+            }}>Experience</MobileMenuLinks>
+            <MobileMenuLinks href='#projects' onClick={() => {
+              setIsOpen(!isOpen)
+            }}>Projects</MobileMenuLinks>
+            <MobileMenuLinks href='#education' onClick={() => {
+              setIsOpen(!isOpen)
+            }}>Education</MobileMenuLinks>
+            <GitHubButton style={{padding: '10px 16px',background: `${theme.primary}`, color: 'white',width: 'max-content'}} 
+            href="/"
             target="_blank">Github Profile</GitHubButton>
-        </MobileMenu>
-      }
-    </Nav >
+          </MobileMenu>
+        }
+      </NavContainer>
+    </Nav>
   )
 }
-
 export default Navbar;
