@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Bio } from '../../data/constants'
 import Typewriter from 'typewriter-effect'
+import HeroImg from '../../images/HeroImage.jpg'
 
 
 const HeroContainer = styled.div`
@@ -96,33 +97,145 @@ const HeroRightContainer = styled.div`
   }
 `;
 
+const Title = styled.div`
+  font-weight: 700;
+  font-size: 50px;
+  color: ${({ theme }) => theme.text_primary};
+  line-height: 68px;
+  @media (max-width: 960px) {
+    text-align: center;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 8px;
+  }
+`;
+
+const TextLoop = styled.div`
+  font-weight: 600;
+  font-size: 32px;
+  display: flex;
+  gap: 12px;
+  color: ${({ theme }) => theme.text_primary};
+  line-height: 68px;
+  @media (max-width: 960px) {
+    text-align: center;
+  }
+  @media (max-width: 640px) {
+    font-size: 22px;
+    line-height: 48px;
+    margin-bottom: 16px;
+  }
+`;
+
+const Span = styled.span`
+  color: ${({ theme }) => theme.primary};
+  cursor: pointer;
+`;
+
+const SubTitle = styled.div`
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 42px;
+  color: ${({ theme }) => theme.text_primary + 95};
+
+  @media (max-width: 960px) {
+    text-align: center;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 16px;
+    line-height: 32px;
+  }
+`;
+
+const ResumeButton = styled.a`
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    width: 95%;
+    max-width: 300px;
+    text-align: center;
+    padding: 16px 0;
+    color:${({ theme }) => theme.white};
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out !important;
+    background: hsla(271, 100%, 50%, 1);
+    background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
+    background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
+    background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
+    box-shadow:  20px 20px 60px #1F2634,
+    -20px -20px 60px #1F2634;
+    &:hover {
+        transform: scale(1.05);
+    transition: all 0.4s ease-in-out;
+    box-shadow:  20px 20px 60px #1F2634;
+    filter: brightness(1);
+    }    
+    
+    
+    @media (max-width: 640px) {
+        padding: 12px 0;
+        font-size: 18px;
+    } 
+
+`;
+
+const Img = styled.img`
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+  max-height: 400px;
+  border-radius: 20%;
+  border: 2px solid ${({ theme }) => theme.primary};
+
+  @media (max-width: 768px) {
+    max-width: 400px;
+    max-height: 400px;
+  }
+
+  @media (max-width: 640px) {
+    max-width: 280px;
+    max-height: 280px;
+  }
+`;
+
+
 const Hero = () => {
   return (
     <div id="about">
       <HeroContainer>
-        <HeroBg>
-        </HeroBg>
-        <HeroInnerContainer>
-          <Title>Hi I am <br />
-            {/* bio from/* ../../data/constants */}
-            {Bio.name}
-          </Title>
-          <TextLoop>
-            I am a
-            <Span>
-              <Typewriter
-                options={{
-                  strings: Bio.roles,
-                  autoStart: true,
-                  loop: true
-                }}
-              />
-            </Span>
-          </TextLoop>
-          <SubTitle>{Bio.description}</SubTitle>
+        <HeroInnerContainer >
+          <HeroLeftContainer id="Left">
+            <Title>Hi, I am <br /> {Bio.name}</Title>
+            <TextLoop>
+              I am a
+              <Span>
+                <Typewriter
+                  options={{
+                    strings: Bio.roles,
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
+              </Span>
+            </TextLoop>
+            <SubTitle>{Bio.description}</SubTitle>
+            <ResumeButton href={Bio.resume} target='display'>Check Resume</ResumeButton>
+          </HeroLeftContainer>
+
+          <HeroRightContainer id="Right">
+            <Img src={HeroImg} alt="hero-image" />
+          </HeroRightContainer>
         </HeroInnerContainer>
-        <HeroRightContainer></HeroRightContainer>
-        <ResumeButton href={Bio.resume} target="_blank" />
+
       </HeroContainer>
     </div>
   )
