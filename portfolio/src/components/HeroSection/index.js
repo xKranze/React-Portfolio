@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { Bio } from '../../data/constants'
 import Typewriter from 'typewriter-effect'
 import HeroImg from '../../images/HeroImage.jpg'
+import HeroBgAnimation from '../HeroBgAnimation'
 
 
 const HeroContainer = styled.div`
@@ -30,8 +31,8 @@ const HeroBg = styled.div`
   right: 0;
   bottom: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 75%;
   max-width: 1360px;
   overflow: hidden;
   padding: 0 30px;
@@ -212,9 +213,12 @@ const Hero = () => {
   return (
     <div id="about">
       <HeroContainer>
+        <HeroBg>
+          <HeroBgAnimation/>
+        </HeroBg>
         <HeroInnerContainer >
           <HeroLeftContainer id="Left">
-            <Title>Hi, I am <br /> {Bio.name}</Title>
+            <Title>Hello, my name is <br /> {Bio.name}</Title>
             <TextLoop>
               I am a
               <Span>
