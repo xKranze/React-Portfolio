@@ -34,9 +34,9 @@ const Wrapper = styled.div`
 `
 
 function App() {
-  const [darkMode] = useState(true);
-  const [openModal, setOpenModal] = useState({ state: false, project: null });
-  console.log(openModal)
+  const [darkMode, setDarkMode] = useState(true);
+  
+  
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <Router >
@@ -45,7 +45,7 @@ function App() {
           <HeroSection />
           <Wrapper>
             <Skills />
-          
+            
           </Wrapper>
           <Projects openModal={openModal} setOpenModal={setOpenModal} />
           <Wrapper>
@@ -53,7 +53,7 @@ function App() {
             <Contact />
           </Wrapper>
           <Footer />
-         
+          
         </Body>
       </Router>
     </ThemeProvider>

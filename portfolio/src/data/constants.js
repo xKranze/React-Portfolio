@@ -103,3 +103,15 @@ export const skills = [
 ];
 
 
+export const education = [
+  {
+    id: 0,
+    img: "placeholder",
+    school: "placeholder",
+    date: "placeholder",
+    grade: "placeholder",
+    desc: "placeholder",
+    degree: "placeholder",
+  },
+  
+];
