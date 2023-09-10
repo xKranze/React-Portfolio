@@ -11,7 +11,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Projects from "./components/Projects";
-
+import ProjectDetails from "./components/ProjectDetails";
 
 
 const Body = styled.div`
@@ -35,8 +35,8 @@ const Wrapper = styled.div`
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
-  
-  
+  const [openModal, setOpenModal] = useState({ state: false, project: null });
+  console.log(openModal)
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <Router >
@@ -53,7 +53,9 @@ function App() {
             <Contact />
           </Wrapper>
           <Footer />
-          
+          {openModal.state &&
+            <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
+          }
         </Body>
       </Router>
     </ThemeProvider>

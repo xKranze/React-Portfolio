@@ -115,3 +115,27 @@ export const education = [
   },
   
 ];
+
+export const projects = [
+  {
+    id: 0,
+    title: "The Joke Dealer",
+    date: "2023",
+    description:
+      "Need to lighten the room up? I got the joke for you! Jokes are safe for work!  In this web application. You can search and or pick categories of jokes your i the mood for and have them displaued to the side. Like the joke your seeing? Click the add to favorites button and save them for later. These jokes are running in safe mode which makes it fun for everyone!",
+    image:
+      "https://github.com/xKranze/React-Portfolio/assets/118097335/7931bb1c-7173-49cd-b145-6bd1860ca5c2",
+    tags: [
+      
+    ],
+    category: "web app",
+    github: "https://github.com/rishavchanda/Trackify",
+    webapp: "https://trackify.duckdns.org",
+  },
+  
+
+];
+
+export const TimeLineData = [
+  { year: 2022, text: "Started my Full Stack journey" },
+];
