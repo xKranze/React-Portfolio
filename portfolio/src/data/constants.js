@@ -2,7 +2,7 @@ export const Bio = {
   name: "Jimmy Yin",
   roles: [
     "Full Stack Developer",
-    "Tesla VSC Technician III",
+    "Tesla Technician III",
   ],
   description:
     "Web development and anything related to programming has always peaked my interest. Wanting to challenge myself, I took the Full Stack Web Development course at the University of Washington. During this program I was able to challenge myself and grow further, engaging in a multitude of projects to expand my knowledge, and sharpen my skills in both designing web applications, and building behind the scenes functionality.",
@@ -160,13 +160,15 @@ export const TimeLineData = [
 export const experiences = [
   {
     id: 0,
-    img: "",
+    img: "https://github.com/xKranze/React-Portfolio/assets/118097335/e6d7b41c-9dd1-4a24-8d1d-9caa8654bde4",
     role: "Tesla Service Technician III",
     company: "Tesla",
     date: "3/2019 - Current",
-    desc: "Working",
+    desc: "Request vehicle logs and analyze vehicle data to perform diagnoses remotely. Assist with on-site diagnoses as needed. Identify and diagnose safety restraint systems, drive units, HVAC, driver assist system, high voltage, components and vehicle infotainment.  Assist with training new technicians as neeeded",
     skills: [
       "Leadership",
+      "Advanced infotainment",
+      "Low/High Voltage diagnoses/repair",
       "PowerShell",
       "Ubuntu"
     ],

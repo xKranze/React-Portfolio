@@ -6,6 +6,7 @@ import { Link as LinkR } from 'react-router-dom';
 import { DiCssdeck } from 'react-icons/di';
 //import { Gi3DGlasses } from "react-icons/gi";
 import { FaBars } from 'react-icons/fa';
+import { Bio } from '../../data/constants';
 
 
 
@@ -193,7 +194,7 @@ const Navbar = () => {
           <NavLink href='#education'>Education</NavLink>
         </NavItems>
         <ButtonContainer>
-          <GitHubButton>Github Profile</GitHubButton>
+          <GitHubButton href={Bio.github} target="display">Github Profile</GitHubButton>
         </ButtonContainer>
         {
           isOpen &&
@@ -214,8 +215,7 @@ const Navbar = () => {
               setIsOpen(!isOpen)
             }}>Education</MobileMenuLinks>
             <GitHubButton style={{padding: '10px 16px',background: `${theme.primary}`, color: 'white',width: 'max-content'}} 
-            href="/"
-            target="_blank">Github Profile</GitHubButton>
+            href={Bio.instagram} target="display">Github Profile</GitHubButton>
           </MobileMenu>
         }
       </NavContainer>
