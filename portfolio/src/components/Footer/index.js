@@ -77,6 +77,12 @@ const SocialMediaIcon = styled.a`
   }
 `;
 
+const Copyright = styled.p`
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: ${({ theme }) => theme.soft2};
+  text-align: center;
+`;
 
 function Footer() {
   return (
@@ -94,10 +100,11 @@ function Footer() {
           <SocialMediaIcon href={Bio.facebook} target="display"><FacebookIcon /></SocialMediaIcon>
           <SocialMediaIcon href={Bio.twitter} target="display"><TwitterIcon /></SocialMediaIcon>
           <SocialMediaIcon href={Bio.linkedin} target="display"><LinkedInIcon /></SocialMediaIcon>
-          <SocialMediaIcon href={Bio.insta} target="display"><InstagramIcon /></SocialMediaIcon>
+          <SocialMediaIcon href={Bio.instagram} target="display"><InstagramIcon /></SocialMediaIcon>
         </SocialMediaIcons>
-      
-
+        <Copyright>
+          &copy; 2023 Jimmy Yin. All rights reserved.
+        </Copyright>
       </FooterWrapper>
     </FooterContainer>
   );

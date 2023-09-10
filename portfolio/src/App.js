@@ -12,7 +12,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Projects from "./components/Projects";
 import ProjectDetails from "./components/ProjectDetails";
-
+import Experience from "./components/Experience";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -45,7 +45,7 @@ function App() {
           <HeroSection />
           <Wrapper>
             <Skills />
-            
+            <Experience />
           </Wrapper>
           <Projects openModal={openModal} setOpenModal={setOpenModal} />
           <Wrapper>

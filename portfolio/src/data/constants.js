@@ -113,7 +113,24 @@ export const education = [
     desc: "placeholder",
     degree: "placeholder",
   },
-  
+  {
+    id: 1,
+    img: "placeholder",
+    school: "placeholder",
+    date: "placeholder",
+    grade: "placeholder",
+    desc: "placeholder",
+    degree: "placeholder",
+  },
+  {
+    id: 2,
+    img: "placeholder",
+    school: "placeholder",
+    date: "placeholder",
+    grade: "placeholder",
+    desc: "placeholder",
+    degree: "placeholder",
+  },
 ];
 
 export const projects = [
@@ -138,4 +155,22 @@ export const projects = [
 
 export const TimeLineData = [
   { year: 2022, text: "Started my Full Stack journey" },
+];
+
+export const experiences = [
+  {
+    id: 0,
+    img: "",
+    role: "Tesla Service Technician III",
+    company: "Tesla",
+    date: "3/2019 - Current",
+    desc: "Working",
+    skills: [
+      "Leadership",
+      "PowerShell",
+      "Ubuntu"
+    ],
+    doc: "",
+  },
+  
 ];
