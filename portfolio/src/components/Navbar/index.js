@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import { useTheme } from 'styled-components';
 import { Link as LinkR } from 'react-router-dom';
 //importting logo from react https://react-icons.github.io/react-icons/icons?name=di
-import { DiCssdeck } from 'react-icons/di';
+import { DiHtml53DEffects, DiJqueryLogo, DiGithubBadge  } from 'react-icons/di';
+
 //import { Gi3DGlasses } from "react-icons/gi";
 import { FaBars } from 'react-icons/fa';
 import { Bio } from '../../data/constants';
@@ -129,7 +130,7 @@ const GitHubButton = styled.a`
 const Span = styled.div`
     padding: 0 4px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 25px;
 `;
 
 const MobileMenu = styled.div`
@@ -178,7 +179,7 @@ const Navbar = () => {
       <NavContainer>
         <NavLogo to='/'>
           <a style={{ display: "flex", alignItems: "center", color: "white", marginBottom: '20;', cursor: 'pointer' }}>
-            <DiCssdeck size="3rem" /> <Span>Portfolio</Span>
+            <DiHtml53DEffects size="3rem" /> <Span>Portfolio</Span>
           </a>
         </NavLogo>
         <MobileIcon>
@@ -194,7 +195,7 @@ const Navbar = () => {
           <NavLink href='#education'>Education</NavLink>
         </NavItems>
         <ButtonContainer>
-          <GitHubButton href={Bio.github} target="display">Github Profile</GitHubButton>
+        <GitHubButton href={Bio.github} target="display"><DiGithubBadge size="2rem" />Github Profile</GitHubButton>
         </ButtonContainer>
         {
           isOpen &&

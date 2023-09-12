@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { Snackbar } from '@mui/material';
+import { SiRocketdotchat } from 'react-icons/si';
 
 const Container = styled.div`
 display: flex;
@@ -129,29 +130,27 @@ const ContactButton = styled.input`
     }
 `
 
+ //emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+        //service key service_0j9bm2l
+        //template template_qmslkrx
+        //pubkey _9gPC6Ly2nheuDB1p
 
+        const Contact = () => {
 
-const Contact = () => {
-
-    //hooks
-    const [open, setOpen] = React.useState(false);
-    const form = useRef();
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        //emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
-        emailjs.sendForm(
-            "service_0j9bm2l",
-            "template_ajdakh9",
-            form.current,
-            "9zhkjeUd1pF4uRf-1")
-            .then((result) => {
-                setOpen(true);
-                form.current.reset();
-            }, (error) => {
-                console.log(error.text);
-            });
-    }
+            //hooks
+            const [open, setOpen] = React.useState(false);
+            const form = useRef();
+          
+            const handleSubmit = (e) => {
+              e.preventDefault();
+              emailjs.sendForm('service_0j9bm2l', 'template_ecx5xqh', form.current, '_9gPC6Ly2nheuDB1p')
+                .then((result) => {
+                  setOpen(true);
+                  form.current.reset();
+                }, (error) => {
+                  console.log(error.text);
+                });
+            }
 
 
 
@@ -161,7 +160,9 @@ const Contact = () => {
                 <Title>Contact</Title>
                 <Desc>Feel free to reach out to me for any questions or opportunities!</Desc>
                 <ContactForm ref={form} onSubmit={handleSubmit}>
-                    <ContactTitle>Email Me 📨</ContactTitle>
+                    
+                    <ContactTitle>Email Me  <SiRocketdotchat size="2rem" /></ContactTitle>
+                    
                     <ContactInput placeholder="Your Email" name="from_email" />
                     <ContactInput placeholder="Your Name" name="from_name" />
                     <ContactInput placeholder="Subject" name="subject" />

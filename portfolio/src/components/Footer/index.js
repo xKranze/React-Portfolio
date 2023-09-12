@@ -63,7 +63,7 @@ color: ${({ theme }) => theme.text_primary};
 
 const SocialMediaIcons = styled.div`
   display: flex;
-  margin-top: 1rem;
+  margin-top: 3rem;
 `;
 
 const SocialMediaIcon = styled.a`
