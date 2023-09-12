@@ -150,7 +150,42 @@ export const education = [
 
 export const projects = [
   {
-    id: 0,
+    id: 1,
+    title: "Sluffin Or Buffin",
+    date: "2023",
+    description:
+      "-When you have created an account, this enables you to enter your stats, goals and comment on others work out log in the news feed, Create your workouts that suits your goal.  Authenticated users can create workout plans, such as choosing exercises, sets, reps, and weights amount.  Track your workouts: Users can record their workout sessions,see the exercises performed.   View you workout history: Users can view their workout history, tracking thier progress over time.",
+    image:
+      "https://github.com/xKranze/React-Portfolio/assets/118097335/b8c71ff2-fbfd-495f-a459-9cc8d17f2fba",
+    tags: [
+      
+    ],
+    category: "web app",
+    github: "https://github.com/xKranze/Sluffin-Or-Buffin",
+    webapp: "https://xkranze.github.io/the-joke-dealer/",
+    member: [
+      {
+        name: "Jimmy Yin",
+        img: "https://avatars.githubusercontent.com/xkranze",
+        linkedin: "https://www.linkedin.com/in/jimmy-yin-5b2970266/",
+        github: "https://github.com/xKranze",
+      },
+      {
+        name: "Paolo Alhambra",
+        img: "https://avatars.githubusercontent.com/palhambra",
+        linkedin: "https://www.linkedin.com/in/paolo-alhambra-438069284/",
+        github: "https://github.com/palhambra",
+      },
+      {
+        name: "Brandon Guerrero",
+        img: "https://avatars.githubusercontent.com/bg2398",
+        linkedin: "https://www.linkedin.com/in/brandon-guerrero-783161156/",
+        github: "https://github.com/bg2398",
+      },
+    ],
+  },
+  {
+    id: 1,
     title: "The Joke Dealer",
     date: "2023",
     description:
@@ -164,7 +199,21 @@ export const projects = [
     github: "https://github.com/xKranze/the-joke-dealer",
     webapp: "https://xkranze.github.io/the-joke-dealer/",
   },
-  
+  {
+    id: 2,
+    title: "Skys's The Limit",
+    date: "2023",
+    description:
+      "A Page to display current and future 5 day weather forecast of a city of your choosing.",
+    image:
+      "https://github.com/xKranze/React-Portfolio/assets/118097335/a61893a0-23e5-485a-bca6-f4e5f3abe9cd",
+    tags: [
+      
+    ],
+    category: "web app",
+    github: "https://github.com/xKranze/skys-the-limit",
+    webapp: "https://xkranze.github.io/skys-the-limit/",
+  },
 
 ];
 
