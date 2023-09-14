@@ -162,7 +162,7 @@ export const projects = [
     ],
     category: "web app",
     github: "https://github.com/xKranze/Sluffin-Or-Buffin",
-    webapp: "https://xkranze.github.io/the-joke-dealer/",
+    webapp: "https://salty-spire-29612.herokuapp.com/",
     member: [
       {
         name: "Jimmy Yin",
