@@ -146,6 +146,7 @@ const ContactButton = styled.input`
               emailjs.sendForm('service_0j9bm2l', 'template_ecx5xqh', form.current, '_9gPC6Ly2nheuDB1p')
                 .then((result) => {
                   setOpen(true);
+                  alert("Email sent successfully!");
                   form.current.reset();
                 }, (error) => {
                   console.log(error.text);

@@ -241,7 +241,9 @@ export const projects = [
     image:
       "https://github.com/xKranze/React-Portfolio/assets/118097335/7931bb1c-7173-49cd-b145-6bd1860ca5c2",
     tags: [
-      
+      "HTML",
+      "JavaScript",
+      "API",
     ],
     category: "web app",
     github: "https://github.com/xKranze/the-joke-dealer",
@@ -263,7 +265,9 @@ export const projects = [
     image:
       "https://github.com/xKranze/React-Portfolio/assets/118097335/a61893a0-23e5-485a-bca6-f4e5f3abe9cd",
     tags: [
-      
+      "HTML",
+      "JavaScript",
+      "API",
     ],
     category: "web app",
     github: "https://github.com/xKranze/skys-the-limit",
