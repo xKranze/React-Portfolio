@@ -295,7 +295,7 @@ export const experiences = [
     role: "Tesla Service Technician III",
     company: "Tesla",
     date: "3/2019 - Current",
-    desc: "Request vehicle logs and analyze vehicle data to perform diagnoses remotely. Assist with on-site diagnoses as needed. Identify and diagnose safety restraint systems, drive units, HVAC, driver assist system, high voltage, components and vehicle infotainment.  Assist with training new technicians as neeeded",
+    desc: "Request vehicle logs and analyze vehicle data to perform diagnoses remotely. Assist with on-site diagnoses as needed. Identify and diagnose safety restraint systems, drive units, HVAC, driver assist system, high voltage, components and vehicle infotainment.  Assist with training new technicians as neeeded.  Worked with Autopilot engineers to provide feed back on current features along with Tesla field techical specialists to resolve and provide customer solutions",
     skills: [
       "Leadership",
       "Advanced infotainment",

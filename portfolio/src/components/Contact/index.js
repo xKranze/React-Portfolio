@@ -141,22 +141,16 @@ const Contact = () => {
   const [open, setOpen] = React.useState(false);
   const form = useRef();
 
-  const handleSnackbarOpen = () => {
-    setOpen(true);
-  };
-
-  const handleSnackbarClose = () => {
-    setOpen(false);
-  };
+ 
 
   const handleSubmit = (e) => {
     e.preventDefault();
     emailjs
       .sendForm('service_0j9bm2l', 'template_ecx5xqh', form.current, '_9gPC6Ly2nheuDB1p')
       .then((result) => {
-        // alert("Email successfully sent!");
+        alert("Email successfully sent!");
         form.current.reset();
-        handleSnackbarOpen(); // Show Snackbar when the email is successfully sent
+       
       })
       .catch((error) => {
         console.log(error.text);
@@ -171,7 +165,7 @@ const Contact = () => {
       <Wrapper>
         <Title>Contact</Title>
         <Desc>Please feel free to reach out to me for any questions or opportunities!</Desc>
-        <ContactForm ref={form} onSubmit={(e) => { handleSubmit(e); handleSnackbarOpen(); }}>
+        <ContactForm ref={form} onSubmit={handleSubmit}>
 
 
           <ContactTitle>Email Me  <SiRocketdotchat size="2rem" /></ContactTitle>
