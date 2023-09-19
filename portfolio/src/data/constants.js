@@ -48,6 +48,10 @@ export const skills = [
         image:
           "https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png",
       },
+      {
+        name: "Handlebars",
+        image: "https://www.vectorlogo.zone/logos/handlebarsjs/handlebarsjs-ar21.svg",
+      },
     ],
   },
   {
@@ -158,7 +162,10 @@ export const projects = [
     image:
       "https://github.com/xKranze/React-Portfolio/assets/118097335/b8c71ff2-fbfd-495f-a459-9cc8d17f2fba",
     tags: [
-      
+      "React JS",
+      "React JS",
+      "React JS",
+      "React JS",
     ],
     category: "web app",
     github: "https://github.com/xKranze/Sluffin-Or-Buffin",
@@ -186,6 +193,44 @@ export const projects = [
   },
   {
     id: 1,
+    title: "Wheelin' N Dealin'",
+    date: "2023",
+    description:
+      "In this application we will have a way for the user to organized the type of vehicles sold such as gas, hybrid, electric wiith there respective details and prices they were sold for. This will let seller know what vehicles are also trending in the current market to further maixmize car flip profits!. Create an account or use this credintials to view page. Login: jiimmyyin85@live.com Password: password12345",
+    image:
+      "https://github.com/xKranze/React-Portfolio/assets/118097335/9b726194-8a27-4298-89dc-46aebe29c6a2",
+    tags: [
+      "Node Js",
+      "MySQL",
+      "Handlebars",
+      "Express Js",
+    ],
+    category: "web app",
+    github: "https://aqueous-inlet-27718.herokuapp.com/login/",
+    webapp: "https://github.com/xKranze/Wheelin-n-dealin",
+    member: [
+      {
+        name: "Jimmy Yin",
+        img: "https://avatars.githubusercontent.com/xkranze",
+        linkedin: "https://www.linkedin.com/in/jimmy-yin-5b2970266/",
+        github: "https://github.com/xKranze",
+      },
+      {
+        name: "Brandon Ruano",
+        img: "https://avatars.githubusercontent.com/bruano95",
+        linkedin: "",
+        github: "https://github.com/bruano95",
+      },
+      {
+        name: "David Soloman",
+        img: "https://avatars.githubusercontent.com/DKsolomon",
+        linkedin: "",
+        github: "https://github.com/DKsolomon",
+      },
+    ],
+  },
+  {
+    id: 1,
     title: "The Joke Dealer",
     date: "2023",
     description:
@@ -198,6 +243,13 @@ export const projects = [
     category: "web app",
     github: "https://github.com/xKranze/the-joke-dealer",
     webapp: "https://xkranze.github.io/the-joke-dealer/",
+    member: [
+      {
+        name: "Jimmy Yin",
+        img: "https://avatars.githubusercontent.com/xkranze",
+        linkedin: "https://www.linkedin.com/in/jimmy-yin-5b2970266/",
+        github: "https://github.com/xKranze",
+      }]
   },
   {
     id: 2,
@@ -213,7 +265,15 @@ export const projects = [
     category: "web app",
     github: "https://github.com/xKranze/skys-the-limit",
     webapp: "https://xkranze.github.io/skys-the-limit/",
+    member: [
+      {
+        name: "Jimmy Yin",
+        img: "https://avatars.githubusercontent.com/xkranze",
+        linkedin: "https://www.linkedin.com/in/jimmy-yin-5b2970266/",
+        github: "https://github.com/xKranze",
+      }]
   },
+  
 
 ];
 
