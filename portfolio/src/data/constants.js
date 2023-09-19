@@ -163,9 +163,11 @@ export const projects = [
       "https://github.com/xKranze/React-Portfolio/assets/118097335/b8c71ff2-fbfd-495f-a459-9cc8d17f2fba",
     tags: [
       "React JS",
-      "React JS",
-      "React JS",
-      "React JS",
+      "MongoDB",
+      "Node Js",
+      "GraphQL",
+      "Express JS",
+    
     ],
     category: "web app",
     github: "https://github.com/xKranze/Sluffin-Or-Buffin",
@@ -204,6 +206,7 @@ export const projects = [
       "MySQL",
       "Handlebars",
       "Express Js",
+      "Node JS"
     ],
     category: "web app",
     github: "https://aqueous-inlet-27718.herokuapp.com/login/",
