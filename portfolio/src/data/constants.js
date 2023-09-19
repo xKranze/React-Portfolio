@@ -127,9 +127,9 @@ export const education = [
     id: 1,
     img: "https://github.com/xKranze/React-Portfolio/assets/118097335/749224c4-c8e5-44cd-84ff-bd504425ab41",
     school: "South Seattle Community College",
-    date: "",
+    date: "04/04-06/06",
   
-    desc: "Automotive Technology Program",
+    desc: "Automotive Technology",
     degree: "",
   },
   {
@@ -138,18 +138,9 @@ export const education = [
     school: "Highline Community College",
     date: "9/03-01/04",
   
-    desc: "Running start program",
+    desc: "Running start program - Computer Applications",
     degree: "",
-  },
-  {
-    id: 2,
-    img: "placeholder",
-    school: "placeholder",
-    date: "placeholder",
-    grade: "placeholder",
-    desc: "placeholder",
-    degree: "placeholder",
-  },
+  }
 ];
 
 export const projects = [
@@ -158,7 +149,7 @@ export const projects = [
     title: "Sluffin Or Buffin",
     date: "2023",
     description:
-      "-When you have created an account, this enables you to enter your stats, goals and comment on others work out log in the news feed, Create your workouts that suits your goal.  Authenticated users can create workout plans, such as choosing exercises, sets, reps, and weights amount.  Track your workouts: Users can record their workout sessions,see the exercises performed.   View you workout history: Users can view their workout history, tracking thier progress over time.",
+      "Sluffin or Buffin a social media spot for users to enter stats, goals and even comment on others work out log in the news feed.  Authenticated users can create workout plans, such as adding exercises, sets, reps, and weights amount.  Track your workouts: Users can record their workout sessions andsee the exercises performed.   View your workout history or view others work out logs and comment to give them props for thier workout or let them know they are sluffin.",
     image:
       "https://github.com/xKranze/React-Portfolio/assets/118097335/b8c71ff2-fbfd-495f-a459-9cc8d17f2fba",
     tags: [
@@ -198,7 +189,7 @@ export const projects = [
     title: "Wheelin' N Dealin'",
     date: "2023",
     description:
-      "In this application we will have a way for the user to organized the type of vehicles sold such as gas, hybrid, electric wiith there respective details and prices they were sold for. This will let seller know what vehicles are also trending in the current market to further maixmize car flip profits!. Create an account or use this credintials to view page. Login: jiimmyyin85@live.com Password: password12345",
+      "In this application we will have a way for the user to organized the type of vehicles sold such as gas, hybrid, electric with there respective details and prices they were sold for. This will let seller know what vehicles are also trending in the current market to further maixmize car flip profits!. Create an account or use this credintials to view page. Login: jiimmyyin85@live.com Password: password12345",
     image:
       "https://github.com/xKranze/React-Portfolio/assets/118097335/9b726194-8a27-4298-89dc-46aebe29c6a2",
     tags: [
@@ -261,7 +252,7 @@ export const projects = [
     title: "Skys's The Limit",
     date: "2023",
     description:
-      "A Page to display current and future 5 day weather forecast of a city of your choosing.",
+      "A Page to display current and future 5 day weather forecast of what city your looking to view.",
     image:
       "https://github.com/xKranze/React-Portfolio/assets/118097335/a61893a0-23e5-485a-bca6-f4e5f3abe9cd",
     tags: [
@@ -297,11 +288,11 @@ export const experiences = [
     date: "3/2019 - Current",
     desc: "Request vehicle logs and analyze vehicle data to perform diagnoses remotely. Assist with on-site diagnoses as needed. Identify and diagnose safety restraint systems, drive units, HVAC, driver assist system, high voltage, components and vehicle infotainment.  Assist with training new technicians as neeeded.  Worked with Autopilot engineers to provide feed back on current features along with Tesla field techical specialists to resolve and provide customer solutions",
     skills: [
+      "PowerShell",
+      "Ubuntu",
       "Leadership",
       "Advanced infotainment",
-      "Low/High Voltage diagnoses/repair",
-      "PowerShell",
-      "Ubuntu"
+      "Low/High Voltage diagnoses/repair"
     ],
     doc: "",
   },
