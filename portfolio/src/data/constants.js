@@ -5,7 +5,7 @@ export const Bio = {
     "Tesla Technician III",
   ],
   description:
-    "Web development and anything related to programming has always peaked my interest. Wanting to challenge myself, I took the Full Stack Web Development course at the University of Washington. During this program I was able to challenge myself and grow further, engaging in a multitude of projects to expand my knowledge, and sharpen my skills in both designing web applications, and building behind the scenes functionality.",
+    "Web development and anything related to programming has always peaked my interest. Wanting to challenge myself, I took the Full Stack Web Development course at the University of Washington. During this program I was able to challenge myself and grow further, engaging in a multitude of projects to expand my knowledge, and improve my skills in both designing web applications, and building behind the scenes functionality.",
   github: "https://github.com/xKranze",
   resume:
     "https://github.com/xKranze",
@@ -149,7 +149,7 @@ export const projects = [
     title: "Sluffin Or Buffin",
     date: "2023",
     description:
-      "Sluffin or Buffin a social media spot for users to enter stats, goals and even comment on others work out log in the news feed.  Authenticated users can create workout plans, such as adding exercises, sets, reps, and weights amount.  Track your workouts: Users can record their workout sessions andsee the exercises performed.   View your workout history or view others work out logs and comment to give them props for thier workout or let them know they are sluffin.",
+      "Sluffin or Buffin a social media spot for users to enter stats, goals and even comment on others work out log on the maian news feed.  Authenticated users can create workout plans, such as adding exercises, sets, reps, and weights amount.  Users can record their workout sessions andsee the exercises performed.  ",
     image:
       "https://github.com/xKranze/React-Portfolio/assets/118097335/b8c71ff2-fbfd-495f-a459-9cc8d17f2fba",
     tags: [
@@ -189,7 +189,7 @@ export const projects = [
     title: "Wheelin' N Dealin'",
     date: "2023",
     description:
-      "In this application we will have a way for the user to organized the type of vehicles sold such as gas, hybrid, electric with there respective details and prices they were sold for. This will let seller know what vehicles are also trending in the current market to further maixmize car flip profits!. Create an account or use this credintials to view page. Login: jiimmyyin85@live.com Password: password12345",
+      "In this application we will have a way for the user to organize the type of vehicles sold such as gas, hybrid, electric with their respective details and prices they were sold for. This will let sellers know what vehicles are also trending in the current market to further maximize car flip profits. Create an account or use this credintial to view page. Login: jiimmyyin85@live.com Password: password12345",
     image:
       "https://github.com/xKranze/React-Portfolio/assets/118097335/9b726194-8a27-4298-89dc-46aebe29c6a2",
     tags: [
@@ -286,7 +286,7 @@ export const experiences = [
     role: "Tesla Service Technician III",
     company: "Tesla",
     date: "3/2019 - Current",
-    desc: "Request vehicle logs and analyze vehicle data to perform diagnoses remotely. Assist with on-site diagnoses as needed. Identify and diagnose safety restraint systems, drive units, HVAC, driver assist system, high voltage, components and vehicle infotainment.  Assist with training new technicians as neeeded.  Worked with Autopilot engineers to provide feed back on current features along with Tesla field techical specialists to resolve and provide customer solutions",
+    desc: "Request vehicle logs and analyze vehicle data to perform diagnoses remotely. Assist with on-site diagnoses as needed. Identify and diagnose safety restraint systems, drive units, HVAC, driver assist system, high voltage, components and vehicle infotainment.  Assist with training new technicians as neeeded.  Worked with Autopilot engineers to provide feedback on current features along with Tesla field technical specialists to resolve and provide customer solutions",
     skills: [
       "PowerShell",
       "Ubuntu",
