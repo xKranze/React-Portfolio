@@ -149,7 +149,7 @@ export const projects = [
     title: "Sluffin Or Buffin",
     date: "2023",
     description:
-      "Sluffin or Buffin a social media spot for users to enter stats, goals and even comment on others work out log on the maian news feed.  Authenticated users can create workout plans, such as adding exercises, sets, reps, and weights amount.  Users can record their workout sessions andsee the exercises performed.  ",
+      "Sluffin or Buffin a social media spot for users to enter stats, goals and even comment on others work out log on the main news feed.  Authenticated users can create workout plans, such as adding exercises, sets, reps, and weights amount.  Users can record their workout sessions and see the exercises performed.",
     image:
       "https://github.com/xKranze/React-Portfolio/assets/118097335/b8c71ff2-fbfd-495f-a459-9cc8d17f2fba",
     tags: [
