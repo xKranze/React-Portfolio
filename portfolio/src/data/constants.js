@@ -8,7 +8,7 @@ export const Bio = {
     "Web development and anything related to programming has always peaked my interest. Wanting to challenge myself, I took the Full Stack Web Development course at the University of Washington. During this program I was able to challenge myself and grow further, engaging in a multitude of projects to expand my knowledge, and improve my skills in both designing web applications, and building behind the scenes functionality.",
   github: "https://github.com/xKranze",
   resume:
-    "https://github.com/xKranze",
+    "https://drive.google.com/file/d/1lazDxY-xanQ9XlhUKca90sM3T3zr2pHz/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/jimmy-yin-5b2970266/",
   twitter: "https://twitter.com/x_Kranze",
   instagram: "https://www.instagram.com/xjyin/",
@@ -189,7 +189,7 @@ export const projects = [
     title: "Wheelin' N Dealin'",
     date: "2023",
     description:
-      "In this application we will have a way for the user to save and organize the type of vehicles sold such as gas, hybrid, electric with their respective details and prices they were sold for.  Allows users to upload photos of vehicles.Create an account or use this credintial to view page. Login: jiimmyyin85@live.com Password:password12345. My Contributions to this project was: Used Express to create all routes and Used Sequelize to interact with MySQL database. Structured the cars database.  Implemented Multer and Upload.JS for uploading vehicle photos."
+      "In this application we will have a way for the user to save and organize the type of vehicles sold such as gas, hybrid, electric with their respective details and prices they were sold for.  Allows users to upload photos of vehicles.Create an account or use this credintial to view page. Login: jiimmyyin85@live.com Password:password12345. My contributions: Used Express to create all routes and Used Sequelize to interact with MySQL database. Structured the cars database.  Implemented Multer and Upload.JS for uploading vehicle photos."
 ,
     image:
       "https://github.com/xKranze/React-Portfolio/assets/118097335/9b726194-8a27-4298-89dc-46aebe29c6a2",
@@ -229,11 +229,12 @@ export const projects = [
     title: "The Joke Dealer",
     date: "2023",
     description:
-      "Need to lighten the room up? I got the joke for you! Jokes are safe for work!  In this web application. You can search and or pick categories of jokes your i the mood for and have them displaued to the side. Like the joke your seeing? Click the add to favorites button and save them for later. These jokes are running in safe mode which makes it fun for everyone!",
+      "This was one of my very first projects using JavaScript. In this web application. Users can search and pick categories of jokes you are in the mood for and have them displayed to the side.The jokes can be saved by adding to favorites and save them for later using local storage.Using REST API to retrieve jokes implemented to the page.",
     image:
       "https://github.com/xKranze/React-Portfolio/assets/118097335/7931bb1c-7173-49cd-b145-6bd1860ca5c2",
     tags: [
       "HTML",
+      "CSS",
       "JavaScript",
       "API",
     ],
@@ -260,6 +261,7 @@ export const projects = [
       "HTML",
       "JavaScript",
       "API",
+      "CSS"
     ],
     category: "web app",
     github: "https://github.com/xKranze/skys-the-limit",
