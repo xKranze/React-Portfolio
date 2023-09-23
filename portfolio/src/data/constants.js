@@ -189,7 +189,7 @@ export const projects = [
     title: "Wheelin' N Dealin'",
     date: "2023",
     description:
-      "In this application we will have a way for the user to save and organize the type of vehicles sold such as gas, hybrid, electric with their respective details and prices they were sold for.  Allows users to upload photos of vehicles.Create an account or use this credintial to view page. Login: jiimmyyin85@live.com Password:password12345. My contributions: Used Express to create all routes and Used Sequelize to interact with MySQL database. Structured the cars database.  Implemented Multer and Upload.JS for uploading vehicle photos."
+      "In this application we will have a way for the user to save and organize the type of vehicles sold such as gas, hybrid, electric with their respective details and prices they were sold for.  Allows users to upload photos of vehicles.  My contributions: Used Express to create all routes and Used Sequelize to interact with MySQL database. Structured the cars database.  Implemented Multer and Upload.JS for uploading vehicle photos."
 ,
     image:
       "https://github.com/xKranze/React-Portfolio/assets/118097335/9b726194-8a27-4298-89dc-46aebe29c6a2",
@@ -229,7 +229,7 @@ export const projects = [
     title: "The Joke Dealer",
     date: "2023",
     description:
-      "This was one of my very first projects using JavaScript. In this web application. Users can search and pick categories of jokes you are in the mood for and have them displayed to the side.The jokes can be saved by adding to favorites and save them for later using local storage.Using REST API to retrieve jokes implemented to the page.",
+      "This was one of my very first projects using JavaScript. Within this web application, users have the ability to search for and select categories of jokes based on their mood, with the jokes subsequently displayed alongside. Furthermore, users can save their favorite jokes, storing them for later use through the utilization of local storage. Using REST API to retrieve jokes implemented to the page.",
     image:
       "https://github.com/xKranze/React-Portfolio/assets/118097335/7931bb1c-7173-49cd-b145-6bd1860ca5c2",
     tags: [
@@ -254,7 +254,7 @@ export const projects = [
     title: "Skys's The Limit",
     date: "2023",
     description:
-      "A Page to display current and future 5 day weather forecast of what city your looking to view.",
+      "A webpage designed to showcase the up-to-date and forthcoming five-day weather forecast for a city of your choice..",
     image:
       "https://github.com/xKranze/React-Portfolio/assets/118097335/a61893a0-23e5-485a-bca6-f4e5f3abe9cd",
     tags: [
