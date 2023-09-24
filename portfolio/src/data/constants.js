@@ -149,7 +149,7 @@ export const projects = [
     title: "Sluffin Or Buffin",
     date: "2023",
     description:
-      "Using full CRUD.  This is a social media spot for users to enter stats, goals and even comment on others work out log in the main news feed.  Users can create workout plans, such as adding exercises, sets, reps, and weights amount.  My contributions: Built using React, created server side and created components on client side. Set up database and deployed using MongoDB Atlas.",
+      "This is a social media website that uses full CRUD for users to enter stats, goals and even comment on others work out log in the main news feed.  Users can create workout plans, such as adding exercises, sets, reps, and weights amount.  My contributions: Built using React, created backend and created components on client side. Set up database and deployed using MongoDB Atlas.",
     image:
       "https://github.com/xKranze/React-Portfolio/assets/118097335/b8c71ff2-fbfd-495f-a459-9cc8d17f2fba",
     tags: [
@@ -189,7 +189,7 @@ export const projects = [
     title: "Wheelin' N Dealin'",
     date: "2023",
     description:
-      "In this application we will have a way for the user to save and organize the type of vehicles sold such as gas, hybrid, electric with their respective details and prices they were sold for.  Allows users to upload photos of vehicles.  My contributions: Used Express to create all routes and Used Sequelize to interact with MySQL database. Structured the cars database.  Implemented Multer and Upload.JS for uploading vehicle photos."
+      "In this application we will have a way for the user to save and organize the type of vehicles sold such as gas, hybrid, electric with their respective details and prices they were sold for.  Allows users to upload photos of vehicles.  My contributions: Used Express to create all routes and Used Sequelize to interact with MySQL database. Designed and implemented the cars database.  Implemented Multer and Upload.JS for uploading vehicle photos."
 ,
     image:
       "https://github.com/xKranze/React-Portfolio/assets/118097335/9b726194-8a27-4298-89dc-46aebe29c6a2",
